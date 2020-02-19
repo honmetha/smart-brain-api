@@ -1,10 +1,6 @@
 //#1 change this function into a ternary and assign it to variable called experiencePoints
-function experiencePoints() {
-    if (winBattle()) {
-        return 10;
-    } else {
-        return 1;
-    }
+let experiencePoints = function(winBattle) {
+    return (winBattle ? 10 : 1);
 }
 
 //Using this function, answer the questions below:
