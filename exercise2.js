@@ -5,20 +5,18 @@ let experiencePoints = function(winBattle) {
 
 //Using this function, answer the questions below:
 function moveCommand(direction) {
-    var whatHappens;
+    let whatHappens;
     switch (direction) {
         case "forward":
-            break;
             whatHappens = "you encounter a monster";
+            break;
         case "back":
             whatHappens = "you arrived home";
             break;
-            break;
         case "right":
-            return whatHappens = "you found a river";
+            whatHappens = "you found a river";
             break;
         case "left":
-            break;
             whatHappens = "you run into a troll";
             break;
         default:
@@ -36,3 +34,26 @@ function moveCommand(direction) {
 //#5 return value when moveCommand("left");
 
 //BONUS: practice makes perfect. Go and write your own switch function. It takes time to get used to the syntax!
+function guessMyNumber(number) {
+    let theAnswerIs;
+    switch (number) {
+        case 1:
+            theAnswerIs = "You are wrong.";
+            break;
+        case 2:
+            theAnswerIs = "You are wrong.";
+            break;
+        case 3:
+            theAnswerIs = "You are right!!";
+            break;
+        case 4:
+            theAnswerIs = "You are wrong.";
+            break;
+        case 5:
+            theAnswerIs = "You are wrong.";
+            break;
+        default:
+            theAnswerIs = "Please enter a valid number."
+    }
+    return theAnswerIs;
+}
